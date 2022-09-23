@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#main{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows:  100px 100px 100px 100px  100px;
+    line-height: 100px;    
+}
+.styleBts{
+   font-size: 20px;
+}
+#Bts_Resultado{
+    grid-column: 1/5;
+    background-color: rgb(37, 30, 30);
+    color: white;
+    border: 1px white solid;
+}
