@@ -1,17 +1,89 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&display=swap');
 
-#main{
+
+#main {
     display: grid;
     grid-template-columns: 250px 250px 250px 250px;
-    grid-template-rows:  100px 100px 100px 100px  100px;
-    line-height: 100px;    
+    grid-template-rows: 160px 100px 100px 100px 100px 100px;
+    line-height: 100px;
+
+
 }
-.styleBts{
-   font-size: 20px;
+
+.styleBts {
+    font-size: 40px;
+    background-color: rgb(177, 170, 170);
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
+
 }
-#Bts_Resultado{
+
+.styleBts2 {
+    font-size: 40px;
+    background-color: grey;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
+
+}
+.styleBts3 {
+    font-size: 70px;
+    background-color: grey;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+#Bts_Resultado {
     grid-column: 1/5;
-    background-color: rgb(37, 30, 30);
+    background-color: rgb(52, 45, 45);
     color: white;
-    border: 1px white solid;
+    border: 4px black solid;
+    border-radius: 50px 50px 0px 0px;
+    font-size: 65px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+
+}
+
+#Bts_Igual {
+    grid-row: 3 / 7;
+    grid-column: 4;
+    border-radius: 0px 0px 50px 0px;
+    font-size: 90px;
+    background-color: grey;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+#Borda_redonda2 {
+    border-radius: 0px 0px 0px 50px;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+button {
+    transition: 0.5s;
+    border: 2px solid black ;
+}
+
+button:hover,
+#Bts_Igual:hover {
+    background-color: rgb(77, 74, 74);
+    color: white;
+
+}
+
+.cor_Nova {
+    background-color: grey;
 }
