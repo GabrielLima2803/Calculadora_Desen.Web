@@ -58,7 +58,7 @@ body {
 }
 
 #Bts_Igual {
-    grid-row: 3 / 7;
+    grid-row: 4 / 7;
     grid-column: 4;
     border-radius: 0px 0px 50px 0px;
     font-size: 90px;
@@ -87,4 +87,21 @@ button:hover,
 
 .cor_Nova {
     background-color: grey;
+}
+.Btn-Posicao{
+    grid-row: 3;
+    grid-column: 4;
+}.n2{
+    grid-row: 3;
+    grid-column: 1;
+}
+.n1{
+    grid-row: 3;
+    grid-column: 3;
+}
+.style{
+    font-size: 40px;
+    background-color: rgb(177, 170, 170);
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Indie Flower', cursive;
 }

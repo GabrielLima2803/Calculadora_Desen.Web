@@ -33,6 +33,12 @@ for (let botao of btnOperadores) {
     botao.addEventListener("click", clique_operador);
 }
 
+let ApgUm = document.getElementById("Apagar-Um");
+
+function ApagarUm(event) {
+    
+}
+
 function clique_operador(event) {
     if (isNaN(visor.innerHTML) === false) {
         if (valor1 === null) {
@@ -105,7 +111,7 @@ function pressionouTecla(event){
         document.getElementsByClassName("numero1")[0].click();
     }else if(event.key === "0"){
         document.getElementsByClassName("numero0")[0].click();
-    }else if(event.key === "C"){
+    }else if(event.key === "Backspace"){
         document.getElementById("Btns_AC").click();
     }else if(event.key === "/"){
         document.getElementsByClassName("botao_Div")[0].click();
@@ -113,7 +119,35 @@ function pressionouTecla(event){
         document.getElementsByClassName("botao_Add")[0].click();
     }else if(event.key === "-"){
         document.getElementsByClassName("botao_Sub")[0].click();
-    }else if(event.key === "="){
+    }else if(event.key === "Enter"){
         document.getElementById("Bts_Igual").click();
     }
+    else if(event.key === "."){
+        document.getElementById("Btn-ponto").click();
+    }
+
 } 
+let BtnApagaUm = document.getElementById("Apagar-Um");
+BtnApagaUm.addEventListener("click", apagaUm)
+
+function apagaUm(event) {
+    visor.innerHTML = visor.innerHTML.substring(0, visor.innerHTML.length - 1);
+}
+
+
+
+
+
+let BtnPonto = document.getElementById("Btn-ponto");
+BtnPonto.addEventListener("click", clique_ponto)
+
+
+function clique_ponto(event) {
+    
+    if (isNaN(visor.innerHTML) === true) {
+        visor.innerHTML = '.';
+    }
+    else if (isNaN(visor.innerHTML+'.') === false){
+        visor.innerHTML = visor.innerHTML + '.';
+    }
+}
